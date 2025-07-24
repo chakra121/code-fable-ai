@@ -23,7 +23,7 @@ type TextTypeProps = {
   onSentenceComplete?: (sentence: string, index: number) => void;
   startOnVisible?: boolean;
   reverseMode?: boolean;
-  [key: string]: any;
+  [key: string]: unknown;
 };
 
 const TextType = ({

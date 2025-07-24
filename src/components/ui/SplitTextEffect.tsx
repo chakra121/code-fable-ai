@@ -13,8 +13,8 @@ type SplitTextProps = {
   duration?: number;
   ease?: string;
   splitType?: "chars" | "words" | "lines";
-  from?: Record<string, any>;
-  to?: Record<string, any>;
+  from?: Record<string, number | string | boolean | undefined>;
+  to?: Record<string, number | string | boolean | undefined>;
   threshold?: number;
   rootMargin?: string;
   textAlign?: React.CSSProperties["textAlign"];

@@ -38,7 +38,7 @@ export default function Home() {
             threshold={0.1}
             rootMargin="-100px"
             textAlign="center"
-            onLetterAnimationComplete={null}
+            onLetterAnimationComplete={undefined}
           />
           <TextType
             text={[
@@ -55,8 +55,8 @@ export default function Home() {
             pauseDuration={2500}
             showCursor={true}
             cursorCharacter="_"
-            variableSpeed={false} // Set to false for consistent typing speed, or adjust to a smaller range if needed
-            onSentenceComplete={null}
+            variableSpeed={{ min: 65, max: 65 }} // Set min and max to the same value for consistent typing speed
+            onSentenceComplete={undefined}
             textColors={["#CCCCCC", "#CCCCCC"]} // Colors for the text
             // Added Tailwind classes for styling the text
             className="text-lg sm:text-xl md:text-2xl text-gray-200 mt-4 max-w-2xl" // Added mt-4 for spacing above, and text color

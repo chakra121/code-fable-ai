@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // tailwind.config.js
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
@@ -14,5 +15,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui"), require("tailwindcss-filters")],
+  plugins: [
+    require("daisyui"),
+    require("tailwindcss-filters"),
+    require("@tailwindcss/typography"),
+  ],
 };
